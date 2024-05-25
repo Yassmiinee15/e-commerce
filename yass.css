@@ -1,0 +1,725 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+}
+.body {
+    padding: 0;
+    margin: 0;
+}
+/* Ajout pour éviter le chevauchement avec le contenu suivant */
+#page {
+    margin-top: 80px; /* Réglez la valeur en fonction de la hauteur de votre header */
+}
+
+/* début header*/
+.header{
+    position: fixed;
+    background-color: rgb(10, 3, 3);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    flex-wrap: wrap; /* Ajout pour que les éléments puissent passer à la ligne si nécessaire */
+}
+
+.headertab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ajout pour que les éléments puissent passer à la ligne si nécessaire */
+}
+
+.header .headerpage    {
+    display: flex;
+    color: black;
+    justify-content: center;
+    flex-wrap: wrap; /* Ajout pour que les éléments puissent passer à la ligne si nécessaire */
+}
+
+.header .headerpage p{
+    margin-right: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    white-space: nowrap; /* Empêche le texte de se découper s'il n'y a pas assez de place */
+}
+
+.headerpage a{
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .42s ease;
+    text-decoration: none;
+}
+
+.headerpage a:hover{
+    border-bottom: 4px solid bisque;
+    padding-bottom: 20px;
+    transform: scale(1.1);
+}
+
+.logo img{
+    max-width: 110px;
+    margin-left: 170px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Modifié pour que les icônes soient alignées à droite */
+}
+
+.header .icon p{
+    margin-right: 35px;
+}
+
+.icon i{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease
+}
+.icon i:hover{
+    transform: scale(1.1);
+    color: bisque;
+}
+ 
+/* Fin header */
+
+
+
+
+/* début page femme homme enfant */
+
+
+.products_list {
+    margin: 200px auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,10fr));
+    grid-gap: 25px;
+    text-decoration: none;
+}
+.product {
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: 0.5s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.product:hover {
+    transform: scale(1.1);
+}
+.image_product {
+    height: 80%;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.image_product img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    padding: 0px;
+    padding-left: 0px;
+    text-decoration: none;
+}
+.content {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    height: fit-content;
+    text-align: left;
+    padding: 20px;
+    text-decoration: none;
+}
+.name {
+    margin: 15px 0;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+.sho {
+    margin: 15px 0;
+    font-weight: 400;
+    color: #999;
+}
+.price {
+    margin: 15px 0;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* fin page homme femme enfant */
+
+/* début page contact */
+
+.contact-bg{
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(image/contact-bg.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.h2 {
+    text-align: center;
+
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: bisque;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: bisque;
+    border-radius: 50%;
+}
+.text{
+    font-weight: 200;
+    opacity: 0.9;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+.contact-body{
+    text-align: center;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 70px;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem 200px;
+    color: black;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+.contact-form{
+    padding: 2rem 10px;
+    border-top: 1px solid #c7c7c7;
+    align-items: center;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+    text-align: center;
+    
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: black;
+    border: none;
+    border-radius: 30px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+.contact-form > div img{
+    width: 85%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-footer{
+    padding: 2rem 0;
+    background: #000;
+}
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    color: bisque;
+    border-color: bisque;
+    transform: scale(1.3);
+}
+
+/* fin page de contact */
+
+/* début footer*/
+
+.contact-footer { 
+    padding: 2rem 0;
+    background: #000;
+}
+
+.contact-footer h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    color: bisque;
+    border-color: bisque;
+    transform: scale(1.3);
+}
+
+/* fin footer */
+
+/* début page form */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+
+#form2 {
+	background-color: #2b2b2B;
+
+}
+
+#formconnect {
+    margin-top: 50px;
+}
+
+#seconnecter {
+	color: red;
+    margin: 0;
+	font-size: 24px;
+}
+
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: .6s ease-in-out;
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show .6s
+}
+
+.container.panel-active .login-container {
+	transform: translateX(100%);
+}
+
+.login-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px;
+	height: 25%;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.input-control input {
+	background-color: #FFFFFF;
+	border: 2px solid #2b2b2b;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 325px;
+	height: 55px;
+	border-radius: 50px;
+
+}
+
+.input-control2 input {
+	background-color: #FFFFFF;
+	border: 2px solid #2b2b2b;
+	padding: 12px 15px;
+	width: 325px;
+	height: 55px;
+	border-radius: 50px;
+}
+
+button.ghost {
+	background-color: #E7E7E7;
+	color: #2b2b2b;
+	border: 1px solid #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 16px 32px;
+	margin-top: 24px;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	border-color: rgba(0, 32, 63, .45);
+	transition: .2s ease-in;
+}
+
+button {
+	background-color: #2b2b2B;
+	color: white;
+	border: 1px solid #2b2b2b;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 16px 32px;
+	margin-top: 24px;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	border-color: rgba(0, 32, 63, .45);
+	transition: .2s ease-in;
+}
+
+button.ghost:hover {
+	cursor: pointer;
+	background-color: #FFFFFF;
+	color: black;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: black;
+	color: #FFFFFF;
+}
+
+button:active {
+	transform: scale(.95);
+}
+
+.social-container {
+	margin: 24px 0;
+}
+
+span {
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 14px;
+	margin: 8px 0 16px;
+	color: #333;
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 100;
+	transition: transform .6s ease-in-out;
+}
+
+.container.panel-active .overlay-container {
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: linear-gradient(to right, #2b2b2b, #E7E7E7);
+	background: #2b2b2b;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+	transform: translateX(0);
+	transition: transform .6s ease-in-out;
+}
+
+.container.panel-active .overlay {
+	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform .6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: .5px;
+	margin: 20px 0 30px;
+}
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .success {
+    color: #09c372;
+    font-size: 10px;
+    height: 13px;
+    text-align: left;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 10px;
+    height: 13px;
+    text-align: left;
+}
+
+
+.input-control2 input:focus {
+    outline: 0;
+}
+
+.input-control2.success2 input {
+    border-color: #09c372;
+}
+
+.input-control2.error2 input {
+    border-color: #ff3860;
+}
+
+.input-control2 .success2 {
+    color: #09c372;
+    font-size: 10px;
+    height: 13px;
+    text-align: left;
+}
+
+.input-control2 .error2 {
+    color: #ff3860;
+    font-size: 10px;
+    height: 13px;
+    text-align: left;
+}
+
+.Erreur {
+    color: #ff3860;
+    font-size: 15px;
+    height: 30px;
+    text-align: center;
+	font-weight: 100;
+}
+
+/* fin page form */
+
+/* debut panier */
+
+.panier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+.panier img {
+    width: 40px;
+    padding: 8px 0;
+}
+.panier section {
+    width: 70%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+th {
+    padding: 10px 0;
+    font-weight: 400;
+}
+td {
+    border-top: 0.5px solid #999;
+    text-align: center;
+    color: #37a6ff;
+}
+tr {
+    border-bottom: 0.5px solid #999;
+}
+
+.total th {
+    border: 0;
+    float: left;
+    font-weight: 500;
+    color: #37a6ff;
+    padding: 10px;
+}
+#input .price{
+    font-size: 2.5em;
+    width: 50px;
+    margin: 0;
+  }
+  
+  input#result{
+    width: 50px;
+    text-align: center;
+  }
+
+/* fin panier */
+
+/* début page de chaque produit : homme, femme et enfant */
+
+.taille_image{
+    width: 435px;
+    height: 545px;
+    margin-top: 130px;
+}
+
+/* fin de la page de chaque produit*/
